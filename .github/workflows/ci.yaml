@@ -17,8 +17,6 @@ jobs:
       - name: Repository Information
         run: |
           echo "Repository Name: ${{github.repository}}"
-          ehco "Repository Name: $GITHUB_REPOSITORY"
           echo "Branch That Triggered The Workflow: ${{github.ref}}"
-          echo "Branch That Triggered The Workflow: $GITHUB_REF"
-          echo "User Who Caused The Workflow Run: ${{github.actor}}"
-          echo "User Who Caused The Workflow Rub:$GITHUB_ACTOR"
+          echo "User Who Caused The Workflow Run: ${{github.actor}}"   
+          
