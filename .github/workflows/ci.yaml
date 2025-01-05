@@ -35,3 +35,13 @@ jobs:
           git config --local --list
           echo "Current Working Directory"
           pwd
+      - name: Use Of Linters Below
+        run: echo "____________________"
+      - name: Install  HTML Linter
+        run: npm install -g prettier
+      - name: Install CSS Linter
+        run: npm install -g stylelint
+      - name: Lint HTML 
+        run: npx prettier --check  --list-different "**/*.html"
+      - name: Link CSS
+        run: npx stylelint "**/*.css"  
