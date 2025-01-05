@@ -50,7 +50,7 @@ jobs:
       - name: Install CSS Linter
         run: npm install -g stylelint
       - name: Install HTMLHint
-        run: npm install -g stylehint 
+        run: npm install -g htmlhint 
       - name: Lint HTML Using HTMLHint
         run: npx htmlhint "**/*.html"
       # - name: Lint HTML 
