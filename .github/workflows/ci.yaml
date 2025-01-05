@@ -49,9 +49,14 @@ jobs:
         run: npm install -g prettier
       - name: Install CSS Linter
         run: npm install -g stylelint
-      - name: Lint HTML 
-        run: |
-          npx prettier --check  --write "**/*.html"
-          npx prettier --list-different  "**/*.html"
+      - name: Install HTMLHint
+        run: npm install -g htmlhint 
+      - name: Lint HTML Using HTMLHint
+        run: npx htmlhint "**/*.html"
+      # - name: Lint HTML 
+      #   run: |
+      #     npx prettier --check  --write "**/*.html"
+      #     npx prettier --list-different  "**/*.html"
       # - name: Link CSS
       #   run: npx stylelint "**/*.css"  
+      # - 
