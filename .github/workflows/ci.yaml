@@ -38,6 +38,8 @@ jobs:
           echo "List the Development Environments"
           echo "Java Runtime"
           java --version
+          echo ".NET Runtime"
+          dontnet --version
           dotnet --list-sdks
           node -v
           npm -v
