@@ -26,5 +26,8 @@ jobs:
           touch temp.html temp1.html temp2.html
           git ls-files
           git add .
+          git ls-files --stage
+          git config --local user.name "Imran Ashraf"
+          git config --local user.email zsain.ucp@gmail.com
           git commit -m "Add temp Files"
-          git ls-files
+          git ls-tree
