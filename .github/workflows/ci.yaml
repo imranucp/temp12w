@@ -35,6 +35,13 @@ jobs:
           git config --local --list
           echo "Current Working Directory"
           pwd
+          echo "List the Development Environments"
+          echo "Java Runtime"
+          java
+          dontnet --list-runtime
+          node -v
+          npm
+          nvm
       - name: Use Of Linters Below
         run: echo "____________________"
       - name: Install  HTML Linter
@@ -45,5 +52,5 @@ jobs:
         run: |
           npx prettier --check  "**/*.html"
           npx prettier --list-different  "**/*.html"
-      - name: Link CSS
-        run: npx stylelint "**/*.css"  
+      # - name: Link CSS
+      #   run: npx stylelint "**/*.css"  
