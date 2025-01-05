@@ -19,4 +19,8 @@ jobs:
           echo "Repository Name: ${{github.repository}}"
           echo "Branch That Triggered The Workflow: ${{github.ref}}"
           echo "User Who Caused The Workflow Run: ${{github.actor}}"   
-          
+          git -v
+          git branch
+          git branch feature/temp
+          git switch feeature/temp
+          touch temp.html temp1.html temp2.html
