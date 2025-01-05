@@ -31,3 +31,4 @@ jobs:
           git config --local user.email zsain.ucp@gmail.com
           git commit -m "Add temp Files"
           git ls-tree HEAD
+          git branch -a
