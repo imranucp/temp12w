@@ -22,5 +22,6 @@ jobs:
           git -v
           git branch
           git branch feature/temp
-          git switch feeature/temp
+          git switch feature/temp
           touch temp.html temp1.html temp2.html
+          git ls-files
