@@ -32,3 +32,4 @@ jobs:
           git commit -m "Add temp Files"
           git ls-tree HEAD
           git branch -a
+          git config --local --list
