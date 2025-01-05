@@ -37,10 +37,10 @@ jobs:
           pwd
           echo "List the Development Environments"
           echo "Java Runtime"
-          java
+          java --version
           dontnet --list-runtime
-          node -v
-          npm
+          node --version
+          npm -version
           nvm
       - name: Use Of Linters Below
         run: echo "____________________"
