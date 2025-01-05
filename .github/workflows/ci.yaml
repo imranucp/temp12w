@@ -30,4 +30,4 @@ jobs:
           git config --local user.name "Imran Ashraf"
           git config --local user.email zsain.ucp@gmail.com
           git commit -m "Add temp Files"
-          git ls-tree
+          git ls-tree HEAD
