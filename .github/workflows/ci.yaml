@@ -1,0 +1,22 @@
+name: ci-wf
+on:
+  push:
+    branches:
+      - develop
+  pull_request: 
+    branches:
+      - develop
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Weclome Message
+        run: echo "Allah Please Help Me"
+      - name: Clone The Repository
+        uses: actions/checkout@v4
+      - name: Repository Information
+        run: |
+          echo "Repository Name: ${{github.repository}}"
+          ehco "Repository Name: $github_repository"
+          echo "Branch That Triggered The Workflow: $github_ref"
+          echo "Branch That Triggered The Workflow: ${{github.ref}}"
