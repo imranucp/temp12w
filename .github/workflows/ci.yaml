@@ -38,7 +38,7 @@ jobs:
           echo "List the Development Environments"
           echo "Java Runtime"
           java --version
-          dontnet
+          dotnet --list-sdks
           node -v
           npm -v
       - name: Use Of Linters Below
