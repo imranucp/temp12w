@@ -39,7 +39,7 @@ jobs:
           echo "Java Runtime"
           java --version
           echo ".NET Runtime"
-          dontnet --version
+          dotnet --version
           dotnet --list-sdks
           node -v
           npm -v
