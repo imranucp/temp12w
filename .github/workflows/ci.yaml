@@ -38,10 +38,9 @@ jobs:
           echo "List the Development Environments"
           echo "Java Runtime"
           java --version
-          dontnet --list-runtime
-          node --version
-          npm -version
-          nvm
+          dontnet
+          node -v
+          npm -v
       - name: Use Of Linters Below
         run: echo "____________________"
       - name: Install  HTML Linter
