@@ -33,3 +33,5 @@ jobs:
           git ls-tree HEAD
           git branch -a
           git config --local --list
+          git "Current Working Directory"
+          pwd
